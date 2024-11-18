@@ -1,0 +1,19 @@
+#header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color:#AFC1BF;
+    z-index: 99;
+    border-style: outset;
+}
+#footer{
+    background-color:#AFC1BF;
+    border-style: outset;
+    /* margin-top: 450px; */
+}
+/*
+#logButton{
+    background-color: #AFC1BF;
+    border-style: outset;
+}
+*/

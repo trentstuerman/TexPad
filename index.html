@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TexPad v0.1</title>
+
+    <!-- Document Links -->
+
+    <link rel="stylesheet" href="config.css">
+
+    <!-- MathJax Boilerplate -->
+
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <script>
+        MathJax = {
+          tex: {
+           inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          chtml: {
+            scale: 1
+          },
+          svg: {
+            scale: 1,
+            minScale: .5,
+            mtextInheritFont: false,
+            merrorInheritFont: true,
+            mathmlSpacing: false,
+            skipAttributes: {},
+            exFactor: .5,
+            displayAlign: 'center',
+            displayIndent: '0',
+            fontCache: 'local',
+            localID: null,
+            internalSpeechTitles: true,
+            titleId:0
+          }
+        };
+    </script>
+
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+    <!-- End Boilerplate -->
+
+</head>
+
+<!-- Begin body -->
+
+<body onbeforeunload="return exitBuffer()" style="background-color:antiquewhite">
+    
+<!-- Header -->
+
+    <header id="header">
+        <h2>$\text{TexPad v0.1}$</h2>
+        <a href="whytexpad.html">Why TexPad?</a>
+        <br>
+        <label>$\text{Enter } \LaTeX \text{ here:}$</label>
+        <input id="userInput" style="width: 400px">
+        <button id="renderButton">
+            $\text{Render } \LaTeX$
+        </button>
+        <br>
+        <label>$\text{Enter desired line:}$</label>
+        <input type="number" id="lineNumber">
+        <br>
+        <label>$\text{Click to add rows:}$</label>
+        <button id="addLine">+</button>
+    </header>
+
+<!-- End Header -->
+
+    <main id="main">
+
+<!-- Default Lines -->
+
+    <p id="line1">$\text{Line 1}$</p>
+    <p id="line2">$\text{Line 2}$</p>
+    <p id="line3">$\text{Line 3}$</p>
+
+<!-- End Default Lines -->
+  
+    </main>
+
+<!-- Footer -->
+
+    <footer id="footer">
+        <h2>$\text{T. Stuerman}$</h2>
+        <a href="https://www.youtube.com/@trentstuerman842" target="_blank">YouTube</a>
+        <a href="https://www.linkedin.com/in/trent-stuerman-638936310/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/trentstuerman" target="_blank">GitHub</a>
+        <a href="mailto:trentstuerman@gmail.com">trentstuerman@gmail.com</a>
+    </footer>
+
+    <br>
+
+    <button id="toggleLog">$\text{Toggle Input Log}$</button>
+
+    <div id="log" style="display: none">
+
+
+
+    </div>
+
+<script src="function.js"></script>
+
+</body>
+</html>
