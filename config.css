@@ -6,14 +6,38 @@
     z-index: 99;
     border-style: outset;
 }
+#headerWhy{
+    background-color:#AFC1BF;
+    z-index: 99;
+    border-style: outset;
+}
 #footer{
     background-color:#AFC1BF;
     border-style: outset;
     /* margin-top: 450px; */
 }
-/*
-#logButton{
-    background-color: #AFC1BF;
+
+.blueButton{
+    background-color:#AFC1BF;
+    border-style: outset;
+    width: 150px;
+    height: 30px;
+}
+.antiquewhiteButton{
+    background-color:antiquewhite;
     border-style: outset;
 }
-*/
+#renderButton{
+    background-color: antiquewhite;
+    border-style: outset;
+}/* this needs simplification, just use the tags bro lol*/
+#addLine{ 
+    background-color: antiquewhite;
+    border-style: outset;
+}
+#controlCenter{
+    display: none;
+}
+#userInput{
+    width: 400px;
+}
