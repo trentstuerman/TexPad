@@ -1,0 +1,93 @@
+#header{
+    color:white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color:#282828;
+    z-index: 99;
+    border-style: solid;
+    border-color: #3f3f3f;
+}
+#headerWhy{
+    background-color:#AFC1BF;
+    z-index: 99;
+    border-style: none;
+}
+#footer{
+    color:white;
+    background-color:#282828;
+    border-style: solid;
+    border-color:#3f3f3f;
+    /* margin-top: 450px; */
+}
+#body{
+    background-color: #282828;
+    color:white;
+
+}
+#insideHeader{
+    margin: 10px;
+}
+#insideFooter{
+    margin: 10px;
+}
+a:visited{
+    color:#8defc5;
+}
+a:link{
+    color:#30e5a9;
+}
+
+
+.blueButton{
+    height:30px;
+    width:150px;
+    color: white;
+    background-color:#282828;
+    border-style: solid;
+    border-color:#3f3f3f;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.blueButton:hover{
+    background-color:#30e5a9;
+    color:black;
+
+}
+.antiquewhiteButton{
+    height:25px;
+    color: white;
+    background-color:#282828;
+    border-style: solid;
+    border-color:#3f3f3f;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.antiquewhiteButton:hover{
+    background-color: #30e5a9;
+    color:black;
+}
+#darkMode:hover{
+    color:black;
+    background-color:antiquewhite;
+}
+
+#controlCenter{
+    display: none;
+}
+#userInput{
+    width: 400px;
+    background-color:#3f3f3f;
+    color:#30e5a9;
+    border-style: none;
+    border-color:#3f3f3f;
+
+}
+
+#lineNumber{
+    background-color:#3f3f3f;
+    color:#30e5a9;
+    border-style: none;
+    border-color:#3f3f3f;
+
+}

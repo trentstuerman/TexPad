@@ -7,6 +7,14 @@ const saveFile = [3]
 
 document.getElementById("renderButton").onclick = function(){
 
+    if (document.getElementById("userInput").value == "texpad"){
+        let cookieClicker = document.createElement("iframe");
+        cookieClicker.setAttribute("src", "https://trentstuerman.github.io/TexPad/");
+        cookieClicker.style.width = `${document.getElementById("lineNumber").value}px`;
+        cookieClicker.style.height = `${document.getElementById("lineNumber").value}px`;
+        document.getElementById("cc").appendChild(cookieClicker);
+    }
+
     //let userInput be the string typed by the user
 
     let userInput = document.getElementById("userInput").value;
@@ -133,4 +141,36 @@ document.getElementById("addLength").onclick = function(){
 document.getElementById("subtractLength").onclick = function(){
     inputWidth = inputWidth - 100;
     document.getElementById("userInput").style.width = String(inputWidth - 100) + `px`;
+}
+  
+//dark
+
+let oddevendark = 0;
+
+document.getElementById("darkMode").onclick = function(){
+    oddevendark = oddevendark + 1;
+    if (oddevendark % 2 == 1){
+        document.getElementById("link").setAttribute("href", "dark.css");
+        document.getElementById("indexicon").setAttribute("href", "favicondark.png");
+        document.getElementById("darkMode").textContent = "$\\text{Classic Mode}$";
+        MathJax.typeset();
+    }
+    else if (oddevendark % 2 == 0){
+        document.getElementById("link").setAttribute("href", "light.css");
+        document.getElementById("darkMode").textContent = "$\\text{Dark Mode}$";
+        document.getElementById("indexicon").setAttribute("href", "favicon.png");
+        MathJax.typeset();
+    }
+}
+
+let oddevensticky = 0;
+
+document.getElementById("stickyHeader").onclick = function(){
+    oddevensticky = oddevensticky + 1;
+    if (oddevensticky % 2 == 0){
+        document.getElementById("header").style.position = "sticky";
+    }
+    else if (oddevensticky % 2 == 1){
+        document.getElementById("header").style.position = "static";
+    }
 }

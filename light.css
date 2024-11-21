@@ -1,0 +1,85 @@
+#header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color:#AFC1BF;
+    z-index: 99;
+    border-style: outset;
+}
+#headerWhy{
+    background-color:#AFC1BF;
+    z-index: 99;
+    border-style: outset;
+}
+#footer{
+    background-color:#AFC1BF;
+    border-style: outset;
+    /* margin-top: 450px; */
+}
+#body{
+    background-color:antiquewhite;
+}
+#insideHeader{
+    margin:10px;
+}
+#insideFooter{
+    margin:10px;
+}
+.blueButton{
+    background-color:#AFC1BF;
+    border-style: outset;
+    width: 150px;
+    height: 30px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+}
+.blueButton:hover{
+    background-color:white;
+}
+.antiquewhiteButton{
+    background-color:antiquewhite;
+    border-style: outset;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height:25px;
+}
+
+.antiquewhiteButton:hover{
+    background-color: white;
+}
+
+#controlCenter{
+    display: none;
+}
+#userInput{
+    width: 400px;
+    background-color:antiquewhite;
+    border-style: none;
+
+}
+#lineNumber{
+    background-color:antiquewhite;
+    border-style: none;
+
+}
+#darkMode:hover{
+    background-color:#3f3f3f;
+    color:#30e5a9;
+    border-color:#3f3f3f;
+}
+
+.center {
+    position: sticky;
+    top: 300px;
+    left: 300px;
+    display: block;
+    width: 300px;
+  }
+
+.titleButton{
+        display: block;
+        margin-right: 10px;
+        margin-top:400px;
+        width: 300px;
+        float: left;
+}

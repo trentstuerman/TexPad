@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.png" id="indexicon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TexPad v0.2.1</title>
+    <title>TexPad v0.3</title>
 
     <!-- Document Links -->
 
-    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="light.css" id="link">
 
     <!-- MathJax Boilerplate -->
 
@@ -52,13 +52,15 @@
 
 <!-- Begin body -->
 
-<body onbeforeunload="return exitBuffer()" id="body" style="background-color:antiquewhite" >
+<body onbeforeunload="return exitBuffer()" id="body">
     
 <!-- Header -->
 
     <header id="header">
-        <h2>$\text{TexPad v0.2.1}$</h2>
+        <div id="insideHeader">
+        <h2>$\text{TexPad v0.3}$</h2>
         <a href="whytexpad.html">Why TexPad?</a>
+        <br>
         <br>
         <label>$\text{Enter } \LaTeX \text{ here:}$</label>
 
@@ -66,18 +68,21 @@
 
         <br>
         <label>$\text{Enter desired line:}$</label>
-        <input type="number" id="lineNumber">
+        <input id="lineNumber">
+        <br>
         <br>
         <label>$\text{User controls:}$</label>
-        <button id="addLine">$+\text{Row}$</button>
+        <button id="addLine" class="antiquewhiteButton">$+\text{Row}$</button>
         <button id="toggleControlCenter" class="antiquewhiteButton">
             $\text{Toggle Controls}$
         </button>
-        <button id="renderButton">
+        <button id="renderButton" class="antiquewhiteButton">
             $\text{Render } \LaTeX$
         </button>
+        <button id="darkMode" class="antiquewhiteButton">$\text{Dark Mode}$</button>
         <button id="subtractLength" class="antiquewhiteButton">-</button>
         <button id="addLength" class="antiquewhiteButton">+</button>
+        </div>
 
     </header>
 
@@ -98,11 +103,13 @@
 <!-- Footer -->
 
     <footer id="footer">
-        <h2>$\text{T. Stuerman}$</h2>
+        <div id="insideFooter">
+        <h2>$\text{Trent Stuerman}$</h2>
         <a href="https://www.youtube.com/@trentstuerman842" target="_blank">YouTube</a>
         <a href="https://www.linkedin.com/in/trent-stuerman-638936310/" target="_blank">LinkedIn</a>
         <a href="https://github.com/trentstuerman" target="_blank">GitHub</a>
         <a href="mailto:trentstuerman@gmail.com">trentstuerman@gmail.com</a>
+        </div>
     </footer>
 
     <br>
@@ -114,6 +121,7 @@
     <button id="toggleLog" class="blueButton" >$\text{Toggle Input Log}$</button>
     <button id="toggleHeader" class="blueButton" >$\text{Toggle Header}$</button>
     <button id="toggleFooter" class="blueButton" >$\text{Toggle Footer}$</button>
+    <button id="stickyHeader" class="blueButton">$\text{Sticky Header}$</button>
     <button id="saveButton" class="blueButton">
         $\cancel{\text{Save File}}$
     </button>
@@ -130,7 +138,7 @@
 
 
     </div>
-    <div id="saveLayer">
+    <div id="cc">
 
 
 
@@ -139,4 +147,5 @@
 <script src="function.js"></script>
 
 </body>
+
 </html>
